@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  gap: 1.5rem;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+h3 {
+  color: var(--color-dark-green);
+  font-family: var(--font-serif);
+  font-size: var(--fs-3xl);
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: var(--color-text-secondary);
+  font-size: var(--fs-lg);
+  max-width: 500px;
+}

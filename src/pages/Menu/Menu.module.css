@@ -1,0 +1,114 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.pageHeader h1 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-5xl);
+  color: var(--color-dark-green);
+  margin-bottom: var(--space-2);
+}
+
+.pageHeader p {
+  font-size: var(--fs-lg);
+  color: var(--color-text-secondary);
+}
+
+/* Filters */
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  align-items: end;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  background-color: var(--color-white);
+}
+
+.searchBar input:focus {
+  outline: none;
+  border-color: var(--color-dark-green);
+}
+
+.categoryFilter select,
+.sortFilter select {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  background-color: var(--color-white);
+  cursor: pointer;
+}
+
+.priceFilter {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.priceFilter input {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  background-color: var(--color-white);
+}
+
+.dishesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .priceFilter {
+    grid-column: 1 / -1;
+  }
+
+  .sortFilter {
+    grid-column: 1 / -1;
+  }
+
+  Button {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .priceFilter {
+    grid-column: auto;
+  }
+
+  .sortFilter {
+    grid-column: auto;
+  }
+
+  Button {
+    grid-column: auto;
+  }
+}

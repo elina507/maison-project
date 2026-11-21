@@ -1,0 +1,113 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-dark-green);
+  font-weight: 500;
+  margin-bottom: var(--space-6);
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-gold);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+.imageSection {
+  position: relative;
+}
+
+.mainImage {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 500px;
+  background-color: var(--color-beige);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-border);
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.category {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-dark-green);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--fs-5xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: var(--fs-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.composition {
+  font-size: var(--fs-base);
+  color: var(--color-text-secondary);
+  padding: var(--space-4);
+  background-color: var(--color-cream);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-gold);
+}
+
+.price {
+  font-family: var(--font-serif);
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--color-dark-green);
+}
+
+.addBtn {
+  width: 100%;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: var(--fs-3xl);
+  }
+
+  .price {
+    font-size: var(--fs-3xl);
+  }
+}

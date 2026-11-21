@@ -1,0 +1,133 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+.pageHeader h1 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-4xl);
+  color: var(--color-dark-green);
+}
+
+.backLink {
+  color: var(--color-dark-green);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-gold);
+}
+
+.orderInfo {
+  background: var(--color-beige);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.orderInfo h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-dark-green);
+}
+
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-base);
+  color: var(--color-text-secondary);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-2);
+}
+
+.orderTotal {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-serif);
+  font-size: var(--fs-2xl);
+  font-weight: 600;
+  color: var(--color-dark-green);
+}
+
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.formGroup label span {
+  color: var(--color-error);
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  background-color: var(--color-white);
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-dark-green);
+}
+
+.radioGroup {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.errorMsg {
+  background-color: rgba(179, 38, 30, 0.1);
+  color: var(--color-error);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-error);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: flex-start;
+  }
+}

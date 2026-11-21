@@ -1,0 +1,104 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-8);
+}
+
+.pageHeader h1 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-4xl);
+  color: var(--color-dark-green);
+}
+
+.logoutBtn {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: var(--color-dark-green-light);
+}
+
+.profileCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.profileAvatar {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-beige);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+}
+
+.profileName {
+  font-family: var(--font-serif);
+  font-size: var(--fs-3xl);
+  color: var(--color-dark-green);
+  margin-bottom: var(--space-1);
+}
+
+.profileEmail {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.profileInfo {
+  text-align: left;
+  font-size: var(--fs-base);
+  color: var(--color-text-secondary);
+}
+
+.profileInfo p {
+  margin-bottom: var(--space-2);
+}
+
+.crmStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-6);
+}
+
+.statCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.statCard h3 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-xl);
+  color: var(--color-dark-green);
+  margin-bottom: var(--space-2);
+}
+
+.statValue {
+  font-size: var(--fs-4xl);
+  font-weight: 700;
+  color: var(--color-gold);
+}

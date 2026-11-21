@@ -1,0 +1,132 @@
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.pageHeader h1 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-5xl);
+  color: var(--color-dark-green);
+  margin-bottom: var(--space-2);
+}
+
+.pageHeader p {
+  font-size: var(--fs-lg);
+  color: var(--color-text-secondary);
+}
+
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.reviewCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.reviewName {
+  font-family: var(--font-serif);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--color-dark-green);
+}
+
+.reviewRating {
+  color: var(--color-gold);
+  font-size: var(--fs-lg);
+}
+
+.reviewText {
+  font-size: var(--fs-base);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Add Review */
+.addReview {
+  background: var(--color-beige);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.addReview h2 {
+  font-family: var(--font-serif);
+  font-size: var(--fs-3xl);
+  color: var(--color-dark-green);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+.successMsg {
+  background-color: rgba(45, 90, 61, 0.1);
+  color: var(--color-success);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-success);
+  text-align: center;
+  margin-bottom: var(--space-4);
+}
+
+.reviewForm {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.formGroup label {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.formGroup label span {
+  color: var(--color-error);
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  background-color: var(--color-white);
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: var(--color-dark-green);
+}
+
+@media (max-width: 768) {
+  .addReview {
+    padding: var(--space-4);
+  }
+}
